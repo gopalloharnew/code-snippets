@@ -1,0 +1,29 @@
+.icon {
+  /* add these */
+  /* -webkit-mask-image: url();
+  mask-image: url();
+  --size: ;
+  --icon-color: ; */
+  --size: var(--icon-size, 1rem);
+  background-color: var(--icon-color);
+  display: inline-block;
+  flex-shrink: 0;
+  height: var(--size);
+  width: var(--size);
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  vertical-align: middle;
+}
+
+.accessibility-border {
+  outline: none;
+  border: 2px solid transparent;
+}
+
+.accessibility-border:focus-visible {
+  border-color: var(--accent-color);
+}

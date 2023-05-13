@@ -9,10 +9,18 @@
 :root {
   --font-primary: "Poppins", sans-serif;
   --font-code: "Fira Code", monospace;
+  --spacing-200: 0.25rem;
+  --spacing-400: 1rem;
+  --border-primary: 1px solid hsla(0, 0%, 100%, 0.075);
 }
 
 body {
   background-color: var(--bg-primary, white);
   color: var(--text-primary, black);
   font-family: var(--font-primary);
+}
+
+*::selection {
+  background-color: var(--accent-color);
+  color: var(--bg-primary);
 }

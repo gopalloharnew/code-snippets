@@ -1,0 +1,20 @@
+header {
+  font-size: 2rem;
+  text-align: center;
+  padding: var(--spacing-400);
+  border-bottom: var(--border-primary);
+}
+
+header a {
+  color: var(--accent-color);
+  text-decoration: none;
+  outline: none;
+  padding: 0rem var(--spacing-200);
+}
+
+.brand-icon {
+  -webkit-mask-image: url(../icons/brand-icon.svg);
+  mask-image: url(../icons/brand-icon.svg);
+  --size: 2rem;
+  --icon-color: currentColor;
+}
