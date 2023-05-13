@@ -1,0 +1,18 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-primary: "Poppins", sans-serif;
+  --font-code: "Fira Code", monospace;
+}
+
+body {
+  background-color: var(--bg-primary, white);
+  color: var(--text-primary, black);
+  font-family: var(--font-primary);
+}

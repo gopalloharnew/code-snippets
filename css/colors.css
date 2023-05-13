@@ -1,0 +1,14 @@
+:root {
+  --accent-color: hsl(285, 100%, 50%);
+}
+
+:root,
+:root[data-theme="light"] {
+  --bg-primary: hsl(0, 0%, 100%);
+  --text-primary: hsla(0, 0%, 0%, 0.9);
+}
+
+:root[data-theme="dark"] {
+  --bg-primary: hsl(0, 0%, 10%);
+  --text-primary: hsla(0, 0%, 100%, 0.9);
+}
