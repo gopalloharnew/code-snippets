@@ -18,6 +18,8 @@
 body {
   background-color: var(--bg-primary, white);
   color: var(--text-primary, black);
+  transition: background-color var(--transition-primary),
+    color var(--transition-primary);
   font-family: var(--font-primary);
 }
 

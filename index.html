@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="dark" data-theme="device">
+<html lang="en" data-color-scheme="dark" data-theme="device">
   <head>
     <!-- meta -->
     <meta charset="UTF-8" />
@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/theme.css" />
 
     <!-- scripts -->
     <script src="js/script.js" defer></script>
@@ -37,6 +38,7 @@
         ><span class="brand-icon icon"></span>Code Snippets</a
       >
     </header>
+
     <!-- nav -->
     <nav class="flex align-center justify-center">
       <div class="nav-content-wraper flex">
@@ -58,6 +60,37 @@
           </li>
         </ul>
       </div>
+
+      <div class="action-button-wraper">
+        <!-- theme -->
+        <div class="theme-button-wraper flex">
+          <button
+            class="theme-button accessibility-border"
+            type="button"
+            title="switch to Dark Theme"
+            data-theme-button="dark"
+          >
+        <span class="icon"></span>
+        </button>
+          <button
+            class="theme-button accessibility-border"
+            type="button"
+            title="switch to Device Theme"
+            data-theme-button="device"
+          >
+        <span class="icon"></span>
+        </button>
+          <button
+            class="theme-button accessibility-border"
+            type="button"
+            title="switch to Light Theme"
+            data-theme-button="light"
+          >
+        <span class="icon"></span>
+        </button>
+        </div>
+      </div>
     </nav>
+    
   </body>
 </html>

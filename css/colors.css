@@ -3,14 +3,14 @@
 }
 
 :root,
-:root.light {
+:root[data-color-scheme="light"] {
   color-scheme: light;
   --bg-primary: hsl(0, 0%, 100%);
   --text-primary: hsla(0, 0%, 0%, 0.9);
   --border-primary-color: hsla(0, 0%, 0%, 0.1);
 }
 
-:root.dark {
+:root[data-color-scheme="dark"] {
   color-scheme: dark;
   --bg-primary: hsl(0, 0%, 10%);
   --text-primary: hsla(0, 0%, 100%, 0.9);
