@@ -2,7 +2,7 @@
   /* add these */
   /* -webkit-mask-image: url();
   mask-image: url();
-  --size: ;
+  --icon-size: ;
   --icon-color: ; */
   --size: var(--icon-size, 1rem);
   background-color: var(--icon-color);
@@ -26,4 +26,21 @@
 
 .accessibility-border:focus-visible {
   border-color: var(--accent-color);
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
 }

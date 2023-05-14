@@ -15,6 +15,6 @@ header a {
 .brand-icon {
   -webkit-mask-image: url(../icons/brand-icon.svg);
   mask-image: url(../icons/brand-icon.svg);
-  --size: 2rem;
+  --icon-size: 2rem;
   --icon-color: currentColor;
 }

@@ -3,14 +3,16 @@
 }
 
 :root,
-:root[data-theme="light"] {
+:root.light {
   color-scheme: light;
   --bg-primary: hsl(0, 0%, 100%);
   --text-primary: hsla(0, 0%, 0%, 0.9);
+  --border-primary-color: hsla(0, 0%, 0%, 0.1);
 }
 
-:root[data-theme="dark"] {
+:root.dark {
   color-scheme: dark;
   --bg-primary: hsl(0, 0%, 10%);
   --text-primary: hsla(0, 0%, 100%, 0.9);
+  --border-primary-color: hsla(0, 0%, 100%, 0.1);
 }

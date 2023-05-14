@@ -11,7 +11,8 @@
   --font-code: "Fira Code", monospace;
   --spacing-200: 0.25rem;
   --spacing-400: 1rem;
-  --border-primary: 1px solid hsla(0, 0%, 100%, 0.075);
+  --border-primary: 1px solid var(--border-primary-color);
+  --transition-primary: 0.25s ease-out;
 }
 
 body {
