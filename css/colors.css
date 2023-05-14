@@ -6,13 +6,17 @@
 :root[data-color-scheme="light"] {
   color-scheme: light;
   --bg-primary: hsl(0, 0%, 100%);
-  --text-primary: hsla(0, 0%, 0%, 0.9);
+  --text-400: hsla(0, 0%, 0%, 0.9);
+  --text-300: hsla(0, 0%, 0%, 0.33);
+  --text-200: hsla(0, 0%, 0%, 0.2);
   --border-primary-color: hsla(0, 0%, 0%, 0.1);
 }
 
 :root[data-color-scheme="dark"] {
   color-scheme: dark;
   --bg-primary: hsl(0, 0%, 10%);
-  --text-primary: hsla(0, 0%, 100%, 0.9);
+  --text-400: hsla(0, 0%, 100%, 0.9);
+  --text-300: hsla(0, 0%, 100%, 0.33);
+  --text-200: hsla(0, 0%, 100%, 0.2);
   --border-primary-color: hsla(0, 0%, 100%, 0.1);
 }
