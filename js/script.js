@@ -2,6 +2,7 @@ console.log("Hello World");
 
 const LOCAL_THEME_KEY = "savedTheme";
 const themeButtons = document.querySelectorAll("[data-theme-button]");
+const navToggleButton = document.querySelector(".nav-toggle-button");
 
 function setLocalTheme() {
   if (window.localStorage && window.localStorage.getItem(LOCAL_THEME_KEY)) {
@@ -35,6 +36,10 @@ themeButtons.forEach((themeButton) => {
     let theme = themeButton.dataset.themeButton.toLowerCase();
     setTheme(theme);
   });
+});
+
+navToggleButton.addEventListener("click", () => {
+  document.querySelector("nav").classList.toggle("open");
 });
 
 setLocalTheme();

@@ -2,20 +2,20 @@ nav {
   width: 100%;
   height: 4rem;
   position: sticky;
-  top: 0;
+  top: 0px;
   padding: 0rem var(--spacing-400);
   border-bottom: var(--border-primary);
   background-color: inherit;
   z-index: 99;
 }
 
-.nav-option-wraper {
-  list-style: none;
-}
-
 .nav-content-wraper {
   width: min(100%, 1500px);
   justify-content: space-between;
+}
+
+.nav-option-wraper {
+  list-style: none;
 }
 
 .nav-option a {
@@ -46,4 +46,53 @@ nav {
   width: 100%;
   left: 0;
   right: auto;
+}
+
+.nav-toggle-button {
+  --size: 2rem;
+  width: var(--size);
+  height: var(--size);
+  background-color: transparent;
+  justify-content: space-evenly;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.nav-toggle-button span {
+  display: block;
+  width: 75%;
+  height: 2px;
+  background-color: currentColor;
+}
+
+/* responsive */
+@media screen and (max-width: 35rem) {
+  .nav-option-height-grid {
+    position: absolute;
+    top: calc(100%);
+    left: 0;
+    right: 0;
+    background-color: var(--bg-primary);
+    overflow: hidden;
+    display: grid;
+    transition: all var(--transition-primary);
+    grid-template-rows: 0fr;
+    border-color: transparent;
+  }
+
+  nav.open .nav-option-height-grid {
+    border-bottom: var(--border-primary);
+    border-top: var(--border-primary);
+    grid-template-rows: 1fr;
+  }
+
+  .nav-option-wraper {
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .nav-option a {
+    display: block;
+    height: 2.5rem;
+  }
 }

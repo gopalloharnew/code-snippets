@@ -41,59 +41,91 @@
     </header>
 
     <!-- nav -->
-    <nav class="flex align-center justify-center">
-      <div class="nav-content-wraper flex">
-        <ul class="nav-option-wraper flex">
-          <li class="nav-option">
-            <a href="#" class="accessibility-border current-page">Home</a>
-          </li>
-          <li class="nav-option">
-            <a href="#" class="accessibility-border">html</a>
-          </li>
-          <li class="nav-option">
-            <a href="#" class="accessibility-border">css</a>
-          </li>
-          <li class="nav-option">
-            <a href="#" class="accessibility-border">javascript</a>
-          </li>
-          <li class="nav-option">
-            <a href="#" class="accessibility-border">About</a>
-          </li>
-        </ul>
-      </div>
+    <nav class="flex align-center justify-center open">
+      <div class="nav-content-wraper flex align-center">
+        <button
+          class="nav-toggle-button accessibility-border flex-column align-center"
+          title="toggle-nav"
+          type="button"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav-option-height-grid">
+          <ul class="nav-option-wraper flex align-center">
+            <li class="nav-option">
+              <a href="#" class="accessibility-border current-page">Home</a>
+            </li>
+            <li class="nav-option">
+              <a href="#" class="accessibility-border">html</a>
+            </li>
+            <li class="nav-option">
+              <a href="#" class="accessibility-border">css</a>
+            </li>
+            <li class="nav-option">
+              <a href="#" class="accessibility-border">javascript</a>
+            </li>
+            <li class="nav-option">
+              <a href="#" class="accessibility-border">About</a>
+            </li>
+          </ul>
+        </div>
 
-      <div class="action-button-wraper">
-        <!-- theme -->
-        <div class="theme-button-wraper flex">
-          <button
-            class="theme-button accessibility-border"
-            type="button"
-            title="switch to Dark Theme"
-            data-theme-button="dark"
-          >
-        <span class="icon"></span>
-        </button>
-          <button
-            class="theme-button accessibility-border"
-            type="button"
-            title="switch to Device Theme"
-            data-theme-button="device"
-          >
-        <span class="icon"></span>
-        </button>
-          <button
-            class="theme-button accessibility-border"
-            type="button"
-            title="switch to Light Theme"
-            data-theme-button="light"
-          >
-        <span class="icon"></span>
-        </button>
+        <div class="action-button-wraper">
+          <!-- theme -->
+          <div class="theme-button-wraper flex">
+            <button
+              class="theme-button accessibility-border"
+              type="button"
+              title="switch to Dark Theme"
+              data-theme-button="dark"
+            >
+              <span class="icon"></span>
+            </button>
+            <button
+              class="theme-button accessibility-border"
+              type="button"
+              title="switch to Device Theme"
+              data-theme-button="device"
+            >
+              <span class="icon"></span>
+            </button>
+            <button
+              class="theme-button accessibility-border"
+              type="button"
+              title="switch to Light Theme"
+              data-theme-button="light"
+            >
+              <span class="icon"></span>
+            </button>
+          </div>
         </div>
       </div>
     </nav>
 
     <!-- main -->
-    <main style="padding: 5rem;font-size: 3rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate iste, impedit repellendus perferendis expedita, ex ea accusantium molestias eveniet fuga, eaque vel magni earum reprehenderit voluptas nesciunt mollitia repellat non quae. Quas, sequi delectus? Labore nulla reiciendis itaque, rem similique odio recusandae! Doloribus, consectetur nesciunt ipsum vero accusantium accusamus aut atque adipisci mollitia. Unde aspernatur nobis, sed perferendis tempore nisi rerum mollitia eaque nihil officia libero numquam repellat blanditiis amet natus consectetur, aperiam saepe eos nemo quam distinctio? Sunt consectetur enim odit, minima nam, ipsam et quas odio fuga, sequi doloremque. Accusantium quasi ratione tenetur architecto commodi quo blanditiis, fuga sit aliquid eligendi assumenda ipsum consequatur possimus quaerat nihil saepe nisi quisquam perferendis eum. Aut officiis modi quisquam veniam aperiam autem voluptas repellendus quaerat unde, fuga vitae sint accusamus quos rem quo! Iusto, dicta odit nihil, dignissimos facilis, molestias ea consectetur tenetur quasi soluta natus veniam? Maxime earum illum, fugiat reprehenderit praesentium suscipit assumenda animi, provident inventore sapiente molestiae, corrupti voluptatem unde itaque. Quos veritatis eos est, repellat, tenetur quidem illo officiis odit quod magnam optio eaque, ut numquam modi commodi dolorem rem iste temporibus nobis possimus totam nihil quam? Totam adipisci iste ipsam reprehenderit, in eum tempora repellendus assumenda?</main>
+    <main style="padding: 5rem; font-size: 1rem">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate iste,
+      impedit repellendus perferendis expedita, ex ea accusantium molestias
+      eveniet fuga, eaque vel magni earum reprehenderit voluptas nesciunt
+      mollitia repellat non quae. Quas, sequi delectus? Labore nulla reiciendis
+      itaque, rem similique odio recusandae! Doloribus, consectetur nesciunt
+      ipsum vero accusantium accusamus aut atque adipisci mollitia. Unde
+      aspernatur nobis, sed perferendis tempore nisi rerum mollitia eaque nihil
+      officia libero numquam repellat blanditiis amet natus consectetur, aperiam
+      saepe eos nemo quam distinctio? Sunt consectetur enim odit, minima nam,
+      ipsam et quas odio fuga, sequi doloremque. Accusantium quasi ratione
+      tenetur architecto commodi quo blanditiis, fuga sit aliquid eligendi
+      assumenda ipsum consequatur possimus quaerat nihil saepe nisi quisquam
+      perferendis eum. Aut officiis modi quisquam veniam aperiam autem voluptas
+      repellendus quaerat unde, fuga vitae sint accusamus quos rem quo! Iusto,
+      dicta odit nihil, dignissimos facilis, molestias ea consectetur tenetur
+      quasi soluta natus veniam? Maxime earum illum, fugiat reprehenderit
+      praesentium suscipit assumenda animi, provident inventore sapiente
+      molestiae, corrupti voluptatem unde itaque. Quos veritatis eos est,
+      repellat, tenetur quidem illo officiis odit quod magnam optio eaque, ut
+      numquam modi commodi dolorem rem iste temporibus nobis possimus totam
+      nihil quam? Totam adipisci iste ipsam reprehenderit, in eum tempora
+      repellendus assumenda?
+    </main>
   </body>
 </html>
