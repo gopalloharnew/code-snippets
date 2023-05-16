@@ -49,6 +49,7 @@ nav {
 }
 
 .nav-toggle-button {
+  display: none;
   --size: 2rem;
   width: var(--size);
   height: var(--size);
@@ -67,6 +68,10 @@ nav {
 
 /* responsive */
 @media screen and (max-width: 35rem) {
+  .nav-toggle-button {
+    display: flex;
+  }
+
   .nav-option-height-grid {
     position: absolute;
     top: calc(100%);
