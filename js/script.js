@@ -1,4 +1,4 @@
-console.log("Hello World");
+import { usePrism } from "./prism/prism.js";
 
 const LOCAL_THEME_KEY = "savedTheme";
 const themeButtons = document.querySelectorAll("[data-theme-button]");
@@ -22,7 +22,7 @@ function renderTheme(theme) {
   html.dataset.theme = theme;
 
   if (theme === "device") {
-    systemDarkTheme =
+    let systemDarkTheme =
       window.matchMedia &&
       window.matchMedia("(prefers-color-scheme: dark)").matches;
     html.dataset.colorScheme = systemDarkTheme ? "dark" : "light";
@@ -43,3 +43,10 @@ navToggleButton.addEventListener("click", () => {
 });
 
 setLocalTheme();
+usePrism({ window: window, document: document });
+console.log(usePrism);
+setTimeout(() => {
+  document.querySelector("code").textContent =
+    "const x = {\n hello: 'world'\n}";
+  usePrism({ window: window, document: document });
+}, 1000);
