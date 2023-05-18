@@ -1,4 +1,33 @@
 .main {
   width: min(100%, 1500px);
   margin: auto;
+  padding: var(--spacing-400);
+}
+
+.search-wraper {
+  display: flex;
+  justify-content: center;
+  padding: var(--spacing-400);
+}
+
+.search-input {
+  --input-height: 3rem;
+  height: var(--input-height);
+  font: inherit;
+  padding: 0rem calc(var(--input-height) / 3);
+  border-radius: 100vw;
+  background-color: transparent;
+  border-color: var(--border-primary-color);
+  width: 50%;
+}
+
+.snippets-wraper {
+  list-style: none;
+}
+
+.snippet {
+  padding: var(--spacing-400);
+  border-bottom: var(--border-primary);
+  margin: 0 auto;
+  max-width: 500px;
 }

@@ -1,4 +1,5 @@
 import { usePrism } from "./prism/prism.js";
+import { snippets } from "./snippets/snippets.js";
 
 const LOCAL_THEME_KEY = "savedTheme";
 const themeButtons = document.querySelectorAll("[data-theme-button]");
@@ -43,10 +44,3 @@ navToggleButton.addEventListener("click", () => {
 });
 
 setLocalTheme();
-usePrism({ window: window, document: document });
-console.log(usePrism);
-setTimeout(() => {
-  document.querySelector("code").textContent =
-    "const x = {\n hello: 'world'\n}";
-  usePrism({ window: window, document: document });
-}, 1000);
