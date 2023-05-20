@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="css/nav.css" />
     <link rel="stylesheet" href="css/theme.css" />
     <link rel="stylesheet" href="css/scrollbar.css" />
+    <link rel="stylesheet" href="css/code-wraper.css" />
     <link rel="stylesheet" href="css/main.css" />
 
     <!-- prism -->
@@ -118,12 +119,27 @@
             class="accessibility-border search-input"
           />
         </div>
-        <ul class="snippets-wraper">
-          <li class="snippet">Html Boilerplate Code</li>
-          <li class="snippet">Search input</li>
-          <li class="snippet">Test</li>
-          <li class="snippet">another boilerplate code</li>
-        </ul>
+        <ul class="snippets-wraper"></ul>
+        <dialog data-code-dialog>
+          <div class="code-wraper" data-color-scheme="dark">
+            <div class="code-toolbar flex">
+              <span class="code-snippet-title"
+                >Hello this is a long
+                 for the code
+                snippet</span
+              >
+              <div class="code-toolbar-action-button-wraper flex">
+                <button class="accessibility-border copy-code-button" title="copy code">
+                  <span class="copy-icon icon"></span>Copy
+                </button>
+                <button class="accessibility-border close-dialog-button" title="close dialog">
+                  <span class="cancel-icon icon"></span>
+                </button>
+              </div>
+            </div>
+            <pre><code class="language-html"></code></pre>
+          </div>
+        </dialog>
       </div>
     </main>
   </body>

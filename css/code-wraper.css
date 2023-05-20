@@ -1,0 +1,72 @@
+.code-wraper {
+  background-color: var(--code-bg);
+  font-family: var(--font-code);
+}
+
+.code-toolbar {
+  border-bottom: var(--border-primary);
+  gap: var(--spacing-400);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.code-snippet-title {
+  padding: 0rem var(--spacing-400);
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.code-snippet-title::after {
+  content: "";
+  width: 10ch;
+  background-image: linear-gradient(to right, transparent, var(--code-bg));
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.code-toolbar-action-button-wraper {
+  flex-shrink: 0;
+}
+
+.copy-code-button,
+.close-dialog-button {
+  margin: var(--spacing-200);
+  padding: 0 var(--spacing-200);
+  gap: var(--spacing-200);
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  border-radius: var(--spacing-200);
+  background-color: transparent;
+  cursor: pointer;
+  font: inherit;
+}
+
+.copy-code-button:hover,
+.close-dialog-button:hover,
+.copy-code-button:focus-visible,
+.close-dialog-button:focus-visible {
+  background-color: hsl(250, 10%, 50%, 0.25);
+}
+
+.copy-icon {
+  -webkit-mask-image: url(../icons/brand-icon.svg);
+  mask-image: url(../icons/brand-icon.svg);
+  --icon-size: 1.3rem;
+  --icon-color: white;
+}
+
+.cancel-icon {
+  -webkit-mask-image: url(../icons/cancel-icon.svg);
+  mask-image: url(../icons/cancel-icon.svg);
+  --icon-size: 1.3rem;
+  --icon-color: white;
+}
+
+.code-wraper pre {
+  padding: var(--spacing-400);
+}

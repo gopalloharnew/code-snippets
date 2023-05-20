@@ -1,8 +1,8 @@
-export function usePrism({ window, document }) {
-  highlightCode({ window: window, document: document });
+export function usePrism() {
+  highlightCode();
 }
 
-function highlightCode({ window, document }) {
+function highlightCode() {
   var _self =
       "undefined" != typeof window
         ? window

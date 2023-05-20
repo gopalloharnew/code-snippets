@@ -30,4 +30,13 @@
   border-bottom: var(--border-primary);
   margin: 0 auto;
   max-width: 500px;
+  cursor: pointer;
+}
+
+[data-code-dialog] {
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  border: var(--border-primary);
+  border-radius: var(--spacing-200);
 }
