@@ -1,7 +1,10 @@
 :root {
   --accent-color: hsl(285, 100%, 50%);
+  --color-success: hsl(120, 100%, 50%);
+  --color-danger: hsl(0, 100%, 50%);
   --code-bg: hsl(225, 8%, 15%);
   --code-text: white;
+  --selection-bg: hsl(285, 100%, 50%, 0.5);
 }
 
 :root,

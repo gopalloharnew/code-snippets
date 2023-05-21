@@ -1,10 +1,19 @@
+.code-dialog *::selection {
+  background-color: var(--selection-bg);
+  color: var(--text-400);
+}
+
 .code-wraper {
   background-color: var(--code-bg);
   font-family: var(--font-code);
+  width: var(--width);
+  --width: inherit;
+  height: var(--height);
+  --height: inherit;
 }
 
 .code-toolbar {
-  border-bottom: var(--border-primary);
+  border-bottom: 1px solid var(--border-primary-color);
   gap: var(--spacing-400);
   justify-content: space-between;
   align-items: center;
@@ -60,6 +69,13 @@
   --icon-color: white;
 }
 
+.copy-code-success .icon {
+  -webkit-mask-image: url(../icons/success-icon.svg);
+  mask-image: url(../icons/success-icon.svg);
+  --icon-size: 1.3rem;
+  --icon-color: var(--color-success);
+}
+
 .cancel-icon {
   -webkit-mask-image: url(../icons/cancel-icon.svg);
   mask-image: url(../icons/cancel-icon.svg);
@@ -67,6 +83,11 @@
   --icon-color: white;
 }
 
+.close-dialog-button:hover .cancel-icon {
+  --icon-color: var(--color-danger);
+}
+
 .code-wraper pre {
   padding: var(--spacing-400);
+  outline: none;
 }

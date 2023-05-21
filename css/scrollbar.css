@@ -17,3 +17,7 @@
 ::-webkit-scrollbar-thumb:hover {
   background-color: var(--text-200);
 }
+
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
