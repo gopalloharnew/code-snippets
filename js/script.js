@@ -10,6 +10,8 @@ const codeDialog = document.querySelector("[data-code-dialog]");
 const codeElement = document.querySelector(".code-element");
 const copyCodeButton = document.querySelector(".copy-code-button");
 
+let copyTimeout;
+
 // theme
 themeButtons.forEach((themeButton) => {
   themeButton.addEventListener("click", () => {
@@ -74,7 +76,6 @@ copyCodeButton.addEventListener("click", async () => {
   if (navigator.clipboard && navigator.clipboard.writeText) {
     try {
       navigator.clipboard.writeText(codeElement.innerText);
-      copyCodeButton.classList.add("copy-code-success");
     } catch (error) {
       console.log(error.message);
     }
@@ -86,5 +87,11 @@ copyCodeButton.addEventListener("click", async () => {
     textarea.select();
     textarea.setSelectionRange(0, textarea.value.length);
     document.execCommand("copy");
+    textarea.remove();
   }
+  copyCodeButton.classList.add("copy-code-success");
+  clearTimeout(copyTimeout);
+  copyTimeout = setTimeout(() => {
+    copyCodeButton.classList.remove("copy-code-success");
+  }, 1000);
 });

@@ -3,6 +3,10 @@
   color: var(--text-400);
 }
 
+.code-dialog {
+  min-width: 50%;
+}
+
 .code-wraper {
   background-color: var(--code-bg);
   font-family: var(--font-code);
