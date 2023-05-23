@@ -46,7 +46,7 @@ pre[class*="language-"] {
 .token.property,
 .token.symbol,
 .token.tag {
-  color: #f92672;
+  color: hsl(290, 100%, 60%, 1);
 }
 .token.boolean,
 .token.number {

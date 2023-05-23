@@ -1,10 +1,9 @@
 :root {
-  --accent-color: hsl(285, 100%, 50%);
   --color-success: hsl(120, 100%, 50%);
   --color-danger: hsl(0, 100%, 50%);
   --code-bg: hsl(225, 8%, 15%);
   --code-text: white;
-  --selection-bg: hsl(285, 100%, 50%, 0.5);
+  --selection-bg: hsl(280, 100%, 50%, 0.2);
 }
 
 :root,
@@ -15,6 +14,7 @@
   --text-300: hsla(0, 0%, 0%, 0.33);
   --text-200: hsla(0, 0%, 0%, 0.2);
   --border-primary-color: hsla(0, 0%, 0%, 0.1);
+  --accent-color: hsl(280, 100%, 40%);
 }
 
 [data-color-scheme="dark"] {
@@ -24,4 +24,5 @@
   --text-300: hsla(0, 0%, 100%, 0.33);
   --text-200: hsla(0, 0%, 100%, 0.2);
   --border-primary-color: hsla(0, 0%, 100%, 0.1);
+  --accent-color: hsl(290, 100%, 60%);
 }

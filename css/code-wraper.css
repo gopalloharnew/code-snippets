@@ -1,6 +1,6 @@
 .code-dialog *::selection {
   background-color: var(--selection-bg);
-  color: var(--text-400);
+  color: unset;
 }
 
 .code-dialog {
