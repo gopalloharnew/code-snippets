@@ -9,7 +9,9 @@ const snippetsWraper = document.querySelector(".snippets-wraper");
 const codeDialog = document.querySelector("[data-code-dialog]");
 const codeElement = document.querySelector(".code-element");
 const copyCodeButton = document.querySelector(".copy-code-button");
-
+const navButtons = document.querySelectorAll("[data-nav-buttons]");
+let currentPage = "Home";
+let visibleSnippets = [];
 let copyTimeout;
 
 // theme
@@ -28,8 +30,33 @@ navToggleButton.addEventListener("click", () => {
 });
 
 //snippets
-snippets.forEach((snippet) => {
-  snippetsWraper.append(snippetItem(snippet));
+function renderSnippets() {
+  snippetsWraper.innerHTML = "";
+  if (currentPage === "Home") {
+    visibleSnippets = snippets;
+  } else {
+    visibleSnippets = snippets.filter((snippet) => {
+      return snippet.language === currentPage;
+    });
+  }
+  visibleSnippets.forEach((snippet) => {
+    snippetsWraper.append(snippetItem(snippet));
+  });
+}
+
+renderSnippets(snippets);
+
+navButtons.forEach((navButton) => {
+  navButton.addEventListener("click", () => {
+    currentPage = navButton.textContent;
+    renderSnippets();
+    navButtons.forEach((navButton) => {
+      navButton.classList.toggle(
+        "current-page",
+        navButton.textContent === currentPage
+      );
+    });
+  });
 });
 
 function openDialog(snippet) {
@@ -72,6 +99,7 @@ codeDialog.addEventListener("click", (e) => {
   }
 });
 
+// copy
 copyCodeButton.addEventListener("click", async () => {
   if (navigator.clipboard && navigator.clipboard.writeText) {
     try {
